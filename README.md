@@ -9,5 +9,5 @@ In this project we have made clock and todo list with the help of bootstrap fram
 # Clock Page
 ![4](https://user-images.githubusercontent.com/82877515/179305311-33ef21a4-7d3b-4b6c-9dd3-47999dc2582b.png)
 
-## Localhost url : http://127.0.0.1:5500/clock.html
-## Localhost url : http://127.0.0.1:5500/todo-list.html
+### Localhost url : http://127.0.0.1:5500/clock.html
+### Localhost url : http://127.0.0.1:5500/todo-list.html
