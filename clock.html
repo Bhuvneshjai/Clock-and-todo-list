@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Clock Time Zone</title>
+    <script>
+        let a;
+        let times;
+        let dates;
+        const options = {weekday: 'long',year: 'numeric',month: 'long',day: 'numeric'};
+        setInterval(() => {
+            a = new Date();
+            times = a.getHours() + ':' + a.getMinutes() + ':' + a.getSeconds();
+            dates = a.toLocaleDateString(undefined,options);
+            document.getElementById('time').innerHTML = times + ' <br>on ' + dates;
+        }, 1000);
+    </script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Clock Time Zone</a>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="container my-4">
+            <div class="jumbotron">
+                <h1 class="display-4">Current time Is: <span id="time"></span></h1>
+                <p class="lead">This Clock is helpful to show the current time and it will be updated on 
+                every 1000 milliseconds</p>
+                <hr class="my-4">
+                <p>We are here to show you the time for different countries</p>
+                <a class="btn btn-primary btn-lg" href="#" role="button">Browse Times</a>
+            </div>
+        </div>
+      </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
