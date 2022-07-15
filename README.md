@@ -1,0 +1,2 @@
+# Clock-and-todo-list
+In this project we have made clock and todo list with the help of bootstrap framework and javascript.  Clock gives time with day and date and todo list is used to add title with description in the local storage , it also have some other functionality like delete which is used to delete the list item one by one and clear list gives a confirm message to delete all the contents in the localstorage if we press yes then it will clear all the contents otherwise not.
